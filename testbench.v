@@ -6,7 +6,6 @@ module tb_electronic_lock;
   reg [18:0]data;
   
   electronic_lock m(t_clk, t_rst, t_b0, t_b1, t_out,t_st);
-
   always #10 t_clk= ~t_clk;
   
   initial begin
